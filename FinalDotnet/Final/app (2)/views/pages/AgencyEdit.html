@@ -1,0 +1,36 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+        <h2> <p style="text-align:center"> Agency Edit.</p></h2><br><br>
+<div class="form-center">
+    
+<form ng-submit="AgEdit()">
+    Id:<input type="text" ng-model="users.id"><br><br>
+    Agency Name: <input type="text" ng-model="users.name"><br><br>
+     Address:<input type="text" ng-model="users.address"><br><br>
+     Contuct Number:<input type="text" ng-model="users.contacNo"><br><br>
+     Email:<input type="text" ng-model="users.email"><br><br>
+     Balance: <input type="text" ng-model="users.balance"><br><br>
+     <input type="submit"  ng-clicked="AgEdit()" value="Submited"class="btn btn-warning">
+ </form>
+ </div>
+ <div style="text-align:left">
+  <a href="#!Agencylist/" class="btn btn-success" >Back</a>
+ </div>
+
+  </body>
+</html>

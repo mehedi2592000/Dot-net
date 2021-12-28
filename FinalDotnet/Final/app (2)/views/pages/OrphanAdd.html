@@ -1,0 +1,46 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+        <h2> <p style="text-align:center"> Orphan Add.</p></h2><br><br>
+<div class="form-center">
+    
+
+
+<form ng-submit="login()">
+    Name: <input type="text" ng-model="data.name"><br><br>
+     contactNo:<input type="text" ng-model="data.contactNo"><br><br>
+     Address:<input type="text" ng-model="data.address"><br><br>
+    
+    
+     IsAccapted:<select id="isAccepted" ng-model="data.isAccepted"><br><br>
+        <option value="True">True</option>
+        <option value="False">False</option>
+        
+    </select><br><br>
+
+     Agency id: <input type="text" ng-model="data.aid"><br><br>
+     Volunteer id: <input type="text" ng-model="data.vid"><br><br>
+     <input type="submit" value="Submited">
+ </form>
+</div>
+
+<div style="text-align:left">
+    <br><br><a href="#!Dashboard/" class="btn btn-success" >Back</a>
+   </div>
+
+    </body>
+</html>

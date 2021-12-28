@@ -1,0 +1,44 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+        <h2> <p style="text-align:center"> Notification Add.</p></h2><br><br>
+<div class="form-center">
+    
+
+<form ng-submit="login()">
+    
+    
+    Type:<select id="type" ng-model="data.type">
+        <option value="atoag">admin to agency</option>
+        <option value="atov">admin to volunteer</option>
+        <option value="atou">admin to user</option>
+        <option value="atoall">admin to all</option>
+    </select><br><br>
+    Message:<input type="text" ng-model="data.message"><br><br>
+    Title:<input type="text" ng-model="data.title"><br><br>
+    Date:<input type="text" ng-model="data.date"><br><br>
+    SenderId:<input type="text" ng-model="data.senderid"><br><br>
+    ReciverId: <input type="text" ng-model="data.receiverid"><br><br>
+     <input type="submit" value="Submited" class="btn btn-primary">
+ </form>
+</div>
+<div style="text-align:left">
+    <br><br><a href="#!Dashboard/" class="btn btn-success" >Back</a>
+   </div>
+
+    </body>
+</html>

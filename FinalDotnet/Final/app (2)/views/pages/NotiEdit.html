@@ -1,0 +1,40 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+        <h2> <p style="text-align:center"> Notification Edit.</p></h2><br><br>
+<div class="form-center">
+    
+
+<form ng-submit="NotieficEdit()">
+    
+    Id:<input type="text" ng-model="noti.id"><br><br>
+    Type:<select id="type" ng-model="noti.type">
+        <option value="atoag">admin to agency</option>
+        <option value="atov">admin to volunteer</option>
+        <option value="atou">admin to user</option>
+        <option value="atoall">admin to all</option>
+    </select><br><br>
+    Message:<input type="text" ng-model="noti.message"><br><br>
+    Title:<input type="text" ng-model="noti.title"><br><br>
+    Date:<input type="text" ng-model="noti.date"><br><br>
+    SenderId:<input type="text" ng-model="noti.senderid"><br><br>
+    ReciverId: <input type="text" ng-model="noti.receiverid"><br><br>
+     <input type="submit"  ng-clicked= "NotieficEdit()"value="Submited"class="btn btn-warning">
+ </form>
+</div>
+    </body>
+</html>

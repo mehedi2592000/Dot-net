@@ -1,0 +1,39 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+        <h2> <p style="text-align:center"> User Add.</p></h2><br><br>
+<div class="form-center">
+    
+
+<form ng-submit="AccaptedAgency()">
+    Id:<input type="text" ng-model="users.id"><br><br>
+     Donatorid: <input type="text" ng-model="users.donatorid"><br><br>
+      Receverid:<input type="text" ng-model="users.reciverid"><br><br>
+           
+     Type:<select id="type" ng-model="users.type">
+         <option value="utoa">user to admin</option>
+         <option value="atou">Admin to user</option>
+         <option value="atoag">admin to agencee</option>
+         <option value="atov">admin to Volunteer</option>
+         <option value="atoag">admin to agencee</option>
+         
+     </select><br><br>
+     Date:<input type="date" ng-model="users.date"><br><br>
+      Amount: <input type="text" ng-model="users.amount"><br><br>
+      <input type="submit" ng-clicked="AccaptedAgency()" value="Submited"class="btn btn-warning">
+  </form>
+</div>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html >
+  <head>
+
+    
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      table.center {
+        margin-left: auto; 
+        margin-right: auto;
+      }
+      </style>	
+    
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="content/style.css">
+
+	</head>
+	<body>
+        <img src="content/pic/logo.jpg" alt="admin bg pic"  class="bg" >	
+
+
+<div>
+    
+
+     
+   <h2> <p style="text-align:center">Total Volunteer money and Information.</p></h2><br><br>
+
+
+
+<div>
+    
+    <table class="center">
+        <tr>
+            <th><h5>Total money to give user:</h5></th>
+            <td><h5>{{List}}</h5></td>
+        </tr>
+    </table>
+  </div>
+
+  <div style="text-align:center">
+    <br><h2>All Volunteer </h2><br>
+    Search:: <input type="text" ng-model="searchBox"><br><br>
+  </div>
+<div>
+<div>
+    
+    
+    
+      <table border="1" class="center">
+        <tr>
+          <th><h5>Id</h5></th>
+          <th><h5>Donatorid</h5></th>
+          <th><h5>Receverid</h5></th>
+          <th><h5>Type</h5></th>
+          <th><h5>Date</h5></th>
+          <th><h5>Amount</h5></th>
+          
+        </tr>
+        <tr ng-repeat="p in TotalmoneyVolunteer| filter:searchBox">
+            <td><h5>{{p.id}}</h5></td>
+            <td><h5>{{p.donatorid}}</h5></td>
+            <td><h5>{{p.reciverid}}</h5></td>
+            <td><h5>{{p.type}}</h5></td>
+            <td><h5>{{p.date}}</h5></td>
+            <td><h5>{{p.amount}}</h5></td>
+          
+             
+        </tr>
+      </table>
+  </div>
+</div>
+<div style="text-align:left">
+  <br><br><a href="#!Dashboard/" class="btn btn-success" >Back</a>
+ </div>
+
+  </body>
+</html>
+  
